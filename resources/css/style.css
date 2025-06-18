@@ -1,0 +1,36 @@
+
+/*  
+#055c9d 	azul
+#f5f7fa 	cinza
+#FFFFFF 	branco
+#000 	texto
+ */
+body{
+  margin:0 auto;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  /* background-color: #f5f7fa; */
+}
+
+.main{
+  background-color: #fff;
+}
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
