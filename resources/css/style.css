@@ -3,7 +3,7 @@
 #055c9d 	azul
 #f5f7fa 	cinza
 #FFFFFF 	branco
-#000 	texto
+#000000   texto
  */
 body{
   margin:0 auto;
@@ -34,3 +34,15 @@ body{
     font-style: normal;
   }
   
+  /* HEADER */
+  .header-list-icons{
+    height: 40px;
+  }
+
+  /* FOOTER */
+  footer{
+    background-color: #055c9d;
+    color: #fff;
+    display: flex;
+    height: 120px;
+  }
