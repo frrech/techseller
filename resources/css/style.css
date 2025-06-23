@@ -1,48 +1,184 @@
 
 /*  
-#055c9d 	azul
-#f5f7fa 	cinza
-#FFFFFF 	branco
-#000000   texto
- */
-body{
-  margin:0 auto;
-  padding: 0;
-  font-family: "Lato", sans-serif;
-  /* background-color: #f5f7fa; */
+#055C9D - azul
+#F5F7FA - cinza
+#FFFFFF - branco
+#000000 - texto
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    /* background-color: #f5f7fa; */
 }
 
-.main{
-  background-color: #fff;
+.main {
+    background-color: #FFF;
+    padding: 40px;
 }
 
 .lato-thin {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
-  
-  .lato-light {
+}
+
+.lato-light {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
-  
-  .lato-regular {
+}
+
+.lato-regular {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  /* HEADER */
-  .header-list-icons{
-    height: 40px;
-  }
+}
 
-  /* FOOTER */
-  footer{
-    background-color: #055c9d;
-    color: #fff;
+/* HEADER */
+.header-list-icons {
+    height: 40px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #055C9D;
+    color: #FFF;
     display: flex;
     height: 120px;
-  }
+}
+
+/* DETALHE PRODUTO */
+#detalhe-produto {
+    display: flex;
+    gap: 40px;
+    /* flex-wrap: wrap; */
+}
+
+/* .detalhe {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+} */
+
+.detalhe h1 {
+    font-weight: 700;
+    font-size: 28px;
+    /* color:#055C9D; */
+    margin: 0 0 10px 0;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 28px;
+    color: #055C9D;
+}
+
+.old-price {
+    color: #888;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.avaliacao {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.estrela-preenchida {
+  color: #FFC107;
+}
+
+.texto-avaliacao {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+select {
+    height: 40px;
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+.car-button {
+    border-radius: 50px;
+    background: #055C9D;
+    border: 1px solid #055C9D;
+    width: 250px;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+
+    transition: all 0.3s ease-in-out;
+}
+
+.car-button:hover {
+    background: #888;
+    border-color: #888;
+    cursor: pointer;
+}
+
+.car-button ion-icon {
+    font-size: 18px;
+}
+
+/* TABS PRODUTO */
+.nav-tabs {
+    border: 0;
+}
+
+.nav-tabs .nav-link {
+    color: #888;
+    position: relative;
+    transition: background-color .15s ease-in-out, color .15s ease-in-out;
+}
+
+.nav-tabs .nav-link.active {
+    border: 0;
+    font-weight: bold;
+    color: #055C9D;
+}
+
+.nav-tabs .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 4px;
+    background-color: #055C9D;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: 0;
+}
+
+/* TENTATIVA 1: Cobrindo :focus, :focus-visible e a propriedade outline */
+
+/* TESTE DE DIAGNÓSTICO */
+.nav-tabs .nav-link.active:focus,
+.nav-tabs .nav-link.active:focus-visible {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+#tabs-produto {
+    margin: 60px 0;
+}
+
+.tab-pane ul li {
+    line-height: 150%;
+}
+

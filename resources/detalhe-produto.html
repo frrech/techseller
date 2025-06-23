@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <title>TechSeller</title>
         <meta charset="UTF-8">
@@ -8,81 +8,184 @@
 
         <!-- Importação do normalize css para corrigir bugs dos navegadores -->
         <link rel="stylesheet" href="../vendors/css/normalize.css">
-        
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-      <div w3-include-html="header.html" class="header"></div>
-      <div class="main">
-        <section>
-          <figure>
-            <img src="https://dummyimage.com/555x369/fff/ccc" alt="Imagem produto">
-          </figure>
-          <div class="detalhe">
-            <h1>TECLADO SEM FIO LOGITECH MX KEYS S</h1>
-              <div class="price">R$ 600,00</div>
-              <div class="price-strikethrough">R$ 900,00</div>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, magni, soluta nemo quos unde molestias doloremque aut quod ex incidunt deserunt laudantium harum inventore. Architecto eius sit tempora repellendus perferendis.</p>
-              <select name="quantidade" id="quantidade">
-                <option value="">Quantidade</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <ion-icon name="cart-outline"></ion-icon>
-          </div>
-        </section>
+        <div w3-include-html="header.html" class="header"></div>
+      
+        <div class="main">
+            <section id="detalhe-produto">
+                <figure>
+                    <img src="https://dummyimage.com/655x369/c6c6c6/FFF" alt="Imagem produto">
+                    <!-- <img src="/resources/img/teclado-produto.jpg" alt="Imagem produto"> -->
+                </figure>
+            
+                <div class="detalhe">
+                    <h1>TECLADO SEM FIO LOGITECH MX KEYS S</h1>
+                    
+                    <div class="price">
+                        <del class="old-price">R$ 900,00</del><br>
+                        <strong class="new-price">R$ 600,00</strong>
+                    </div>
 
-        <section>
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">
-              Tab 1
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">
-              Tab 2
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">
-              Tab 3
-            </button>
-          </li>
-        </ul>
-          <!-- Tab panes -->
-          
-        <div class="tab-content pt-3">
-          <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-            <p>Conteúdo da Tab 1</p>
-          </div>
-          <div class="tab-pane fade" id="tab2" role="tabpanel">
-            <p>Conteúdo da Tab 2</p>
-          </div>
-          <div class="tab-pane fade" id="tab3" role="tabpanel">
-            <p>Conteúdo da Tab 3</p>
-          </div>
+                    <div class="avaliacao">
+                        <span class="estrela-preenchida">&#9733;</span>
+                        <span class="estrela-preenchida">&#9733;</span>
+                        <span class="estrela-preenchida">&#9733;</span>
+                        <span class="estrela-preenchida">&#9733;</span>
+                        <span class="estrela-vazia">&#9733;</span>
+                        <span class="texto-avaliacao">(4.0 de 5)</span>
+                    </div>
+                
+                    <p class="description"><b>Experiência de digitação fluída</b>: com teclas esféricas moldadas para a ponta dos dedos, este teclado... <a href="#tabs-produto">Saiba mais</a></p>
+                
+                    <select name="quantidade" id="quantidade">
+                        <option value="">Quantidade</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    
+                    <button type="button" class="btn btn-primary btn-lg car-button"> <ion-icon name="cart-outline"></ion-icon> Adicionar ao carrinho</button>
+                    <!--  -->
+                </div>
+            </section>
+
+            <!-- TABS -->
+            <section id="tabs-produto">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">Sobre este item</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">Detalhes do Produto</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">Características</button>
+                    </li>
+                </ul>
+            
+                <!-- Tab panes -->
+                <div class="tab-content pt-3">
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                        <ul>
+                            <li><b>Experiência de digitação fluída</b>: com teclas esféricas moldadas para a ponta dos dedos, este teclado oferece uma experiência de digitação rápida, fluida, precisa e silenciosa;</li>
+                            <li><b>Automatize tarefas repetitivas</b>: crie e compartilhe facilmente atalhos de ações inteligentes que economizam tempo para executar várias ações com um único toque com o aplicativo Logi Options+;</li>
+                            <li><b>Iluminação mais inteligente</b>: as teclas retroiluminadas do teclado acendem conforme suas mãos se aproximam e se adaptam ao ambiente; Agora com mais personalizações de iluminação no Logi Options+;</li>
+                            <li><b>Mais conforto, mais foco</b>: trabalhe com mais conforto usando um teclado com construção sólida, design discreto e um ângulo de baixo perfil ideal para melhorar a posição do seu pulso;</li>
+                            <li><b>Teclado Bluetooth para vários dispositivos e SOs</b>: pareie até 3 dispositivos em praticamente qualquer sistema operacional (Windows, macOS, Linux) via Bluetooth Low Energy ou receptor Logi Bolt USB incluído;</li>
+                            <li>Cabo para carregamento não incluso.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="tab2" role="tabpanel">
+                        <p><b>Marca</b>: Logitech</p>
+
+                        <p><b>Modelo</b>: 920-011563</p>
+
+                        <p><b>Especificações</b>:</p>
+
+                        <ul>
+                            <li>Bateria Li-Po recarregável (1500 mAh);</li>
+                            <li>Software Logi Options+ para personalização e configuração de funções*;</li>
+                            <li>Teclas fáceis de alternar para conectar até três dispositivos;</li>
+                            <li>Sensores de proximidade das mãos que ativam a iluminação de fundo;</li>
+                            <li>Sensores de luz ambiente que ajustam o brilho da iluminação de fundo;</li>
+                            <li>Conexão USB-C;</li>
+                            <li>Bluetooth de baixa energia;</li>
+                            <li>Receptor USB Logi Bolt.</li>
+                        </ul>
+
+                        <p><b>Recursos</b>:</p>
+
+                        <ul>
+                            <li>Digite em um teclado desenvolvido para conforto, estabilidade e precisão;</li>
+                            <li>Iluminação inteligente com detecção de proximidade das mãos;</li>
+                            <li>Digite em vários computadores através da tecnologia Logitech Flow;</li>
+                            <li>Pareie com até três dispositivos;</li>
+                            <li>USB-C recarregável: a carga completa dura até 10 dias*;</li>
+                            <li>Receptor USB Logi Bolt;</li>
+                            <li>Bluetooth Low Energy.</li>
+                        </ul>
+
+                        <p><b>Compatibilidade Bluetooth</b>:</p>
+
+                        <ul>
+                            <li>Windows 10 ou superior;</li>
+                            <li>macOS 10;</li>15 ou superior;</li>
+                            <li>Linux;</li>
+                            <li>Chrome OS</li>
+                            <li>iPadOS 14 ou superior;</li>
+                            <li>Android 8.0 ou superior.</li>
+                        </ul>
+
+                        <p><b>Compatibilidade Receptor USB Logi Bolt</b>:</p>
+
+                        <ul>
+                            <li>Requer porta USB disponível;</li>
+                            <li>Windows 10 ou superior;</li>
+                            <li>macOS 10;</li>15 ou superior;</li>
+                            <li>Linux;</li>
+                            <li>Chrome OS.</li>
+                        </ul>
+
+                        <p><b>Conteúdo da Embalagem</b>:</p>
+
+                        <ul>
+                            <li>Teclado MX Keys S;</li>
+                            <li>Receptor USB Logi Bolt;</li>
+                            <li>Cabo de carregamento USB-C (USB-A para USB-C);</li>
+                            <li>Documentação do usuário;</li>
+                            <li>Garantia de 1 ano do fabricante.</li>
+                        </ul>
+
+                        <p><b>Garantia</b>:<br>
+                        1 ano de garantia (3 meses de garantia legal + 9 meses de garantia contratual junto ao fabricante).</p>
+
+                        <p><b>Peso</b>:<br>
+                        1134 gramas (bruto com embalagem).</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab3" role="tabpanel">
+                        <p><b>Cor</b>: Grafite</p>
+                        <p><b>Dispositivos compatíveis</b>:	PC</p>
+                        <p><b>Tecnologia de conectividade</b>:	Bluetooth, USB</p>  
+                        <p><b>Características especiais</b>:	Bluetooth, Sem fio</p>
+                        <p><b>Quantidade de teclas</b>: 104</p>
+                        <p><b>Suporte para cor de retroiluminação do teclado</b>: RGB</p>
+                        <p><b>Idioma</b>: Inglês</p>
+                        <p><b>Número de baterias</b>: 1</p>
+                        <p><b>Fonte de energia</b>: Energia elétrica</p>
+                        <p><b>Tipo de comutador</b>: Tátil</p>
+                        <p><b>Disposição do teclado</b>: QWERTY</p>
+                        <p><b>Orientação de uso</b>: Ambidestro</p>
+                        <p><b>Quantidade do botão</b>: 104</p>
+                        <p><b>Nível de resistência à água</b>: Não resistente à água</p>
+                        <p><b>Modelo de interruptor de teclado mecânico</b>: ajazz_x_huano_diced_fruit_blueberry</p>
+                        <p><b>Número de seções</b>: 3</p>
+                        <p><b>Contagem de processadores</b>: 1</p>
+                    </div>
+                </div>
+            </section>
         </div>
-        </section>
-      </div>
-      <!-- footer -->
-       <div w3-include-html="footer.html"></div>
-      <!-- Bootstrap -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- IonIcons -->
-      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-      <!-- scripts -->
-      <script src="js/include.js"></script>
+
+        <!-- footer -->
+        <div w3-include-html="footer.html"></div>
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- IonIcons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- scripts -->
+        <script src="js/include.js"></script>
     </body>
 </html>
