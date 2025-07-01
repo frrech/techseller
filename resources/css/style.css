@@ -41,6 +41,12 @@ body {
   height: 40px;
 }
 
+.icons{
+  display:flex;
+  justify-items: end;
+  flex-wrap: nowrap;
+}
+
 /* FOOTER */
 footer{
   background-color: #055c9d;
@@ -217,3 +223,32 @@ select {
     line-height: 150%;
 }
 
+@media only screen and (max-width:990px){ 
+  /* - Corrigir: A partir dessa resolução o navbar desaparece e os icones diminuem */
+  .menu-footer{
+    flex-direction: column;
+
+  }
+}
+
+@media only screen and (max-width: 750px){
+  /* - Corrigir: fazer a logo tomar o centro se possível (ou desejável) */
+  header{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 592px){
+  .main-nav ul{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-nav{
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 200px;
+  }
+}
