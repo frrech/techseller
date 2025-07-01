@@ -48,20 +48,41 @@ footer{
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 120px;
+  height: 250px;
+  font-weight: 300;
 }
 
 .footer-list{
   list-style-type: none;
 }
 
-.footer-parte-superior{
+.footer-barra-superior{
   display:flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .cartoes{
-  display:flex;
+  /* display:flex; */
+  gap: 20px;
+  margin-left: 15px;
+}
+
+.cartoes img{
+  height: 80%;
+}
+
+.midias{
+  gap:20px;
+  margin-right: 15px;
+}
+
+.midias img{
+  height:80%;
+}
+
+.menu-footer a{
+  font-size: 18px;
 }
 
 /* DETALHE PRODUTO */
