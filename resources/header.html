@@ -8,23 +8,28 @@
     <title>Document</title>
 </head>
 <body>
-        <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <header class="d-flex justify-content-between align-items-center p-4 border-bottom">
             <div class="logo d-flex align-items-center">
-            <img src="https://via.placeholder.com/40" alt="Logo" class="me-2">
-            <span class="fw-bold">Minha Marca</span>
+                <img src="https://dummyimage.com/40x40/c6c6c6/FFF" alt="Logo" class="me-2">
+                <span class="fw-bold">TechSeller</span>
             </div>
             <nav>
             <!-- Tornar em menu dropdown -->
-            <ul class="nav">
+            <ul class="nav main-nav">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Promoções</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Sobre nós</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
                 <!-- colocar em uma div separada -->
-                <a href=""><ion-icon name="cart-outline" size="large" class="header-list-icons"></ion-icon></a>
-                <a href=""><ion-icon name="person-circle-outline" size="large" class="header-list-icons"></ion-icon></a>
+                 <li>
+                    <div>
+                        <a href="#"><ion-icon name="cart-outline" size="large" class="header-list-icons"></ion-icon></a>
+                        <a href="#"><ion-icon name="person-circle-outline" size="large" class="header-list-icons"></ion-icon></a>
+                    </div>
+                </li>
             </ul>
+            
             </nav>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
             <!-- IonIcons -->

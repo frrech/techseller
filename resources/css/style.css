@@ -205,3 +205,26 @@ select {
     line-height: 150%;
 }
 
+@media only screen and (max-width: 750px){
+  header{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header .logo{
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 570px){
+  .main-nav ul{
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+  }
+
+  .main-nav{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 200px;
+  }
+}
