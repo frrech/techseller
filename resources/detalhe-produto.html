@@ -16,6 +16,9 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+        <!-- Fancybox Gallery -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -24,8 +27,42 @@
         <main class="container py-5">
             <section id="detalhe-produto">
                 <figure>
-                    <img src="https://dummyimage.com/655x369/c6c6c6/FFF" alt="Imagem produto">
-                    <!-- <img src="/resources/img/teclado-produto.jpg" alt="Imagem produto"> -->
+                    <a href="https://dummyimage.com/1024x768/c6c6c6/FFF" data-fancybox="galeria-produto">
+                        <!-- <img src="https://dummyimage.com/655x369/c6c6c6/FFF" alt="Imagem produto"> -->
+                        <img src="/resources/img/teclado-produto.jpg" class="imagem-principal" alt="TECLADO SEM FIO LOGITECH MX KEYS S" data-fancybox="galeria-produto">
+                    </a>
+
+                    <!-- Miniaturas abaixo -->
+                    <div class="miniaturas">
+                        <a href="/resources/img/teclado-produto-2.jpg" data-fancybox="galeria-produto">
+                            <img src="/resources/img/teclado-produto-2.jpg" alt="Miniatura 2" class="thumb-img">
+                        </a>
+                        <a href="/resources/img/teclado-produto-3.jpg" data-fancybox="galeria-produto">
+                            <img src="/resources/img/teclado-produto-3.jpg" alt="Miniatura 3" class="thumb-img">
+                        </a>
+                        <a href="/resources/img/teclado-produto-4.jpg" data-fancybox="galeria-produto">
+                            <img src="/resources/img/teclado-produto-4.jpg" alt="Miniatura 4" class="thumb-img">
+                        </a>
+                        <a href="/resources/img/teclado-produto-5.jpg" data-fancybox="galeria-produto">
+                            <img src="/resources/img/teclado-produto-5.jpg" alt="Miniatura 5" class="thumb-img">
+                        </a>
+                        <a href="/resources/img/teclado-produto-6.jpg" data-fancybox="galeria-produto">
+                            <img src="/resources/img/teclado-produto-6.jpg" alt="Miniatura 6" class="thumb-img">
+                        </a>
+                        <a href="/resources/img/teclado-produto-7.jpg" data-fancybox="galeria-produto">
+                            <img src="/resources/img/teclado-produto-7.jpg" alt="Miniatura 7" class="thumb-img">
+                        </a>
+                        <a href="/resources/img/teclado-produto-8.jpg" data-fancybox="galeria-produto">
+                            <img src="/resources/img/teclado-produto-8.jpg" alt="Miniatura 8" class="thumb-img">
+                        </a>
+                        <a href="/resources/img/teclado-produto-9.jpg" data-fancybox="galeria-produto">
+                            <img src="/resources/img/teclado-produto-9.jpg" alt="Miniatura 9" class="thumb-img">
+                        </a>
+                        <a href="/resources/img/teclado-produto-10.jpg" data-fancybox="galeria-produto">
+                            <img src="/resources/img/teclado-produto-10.jpg" alt="Miniatura 10" class="thumb-img">
+                        </a>
+                    </div>
+
                 </figure>
             
                 <div class="detalhe">
@@ -46,17 +83,39 @@
                     </div>
                 
                     <p class="description"><b>Experiência de digitação fluída</b>: com teclas esféricas moldadas para a ponta dos dedos, este teclado... <a href="#tabs-produto">Saiba mais</a></p>
-                
-                    <select name="quantidade" id="quantidade">
-                        <option value="">Quantidade</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
                     
-                    <button type="button" class="btn btn-primary btn-lg car-button"> <ion-icon name="cart-outline"></ion-icon> Adicionar ao carrinho</button>
-                    <!--  -->
+                    <div class="mb-3 d-flex gap-2">
+                        <select name="quantidade" id="quantidade" class="form-control">
+                            <option value="">Quantidade</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+
+                        <select name="cor" id="cor" class="form-control">
+                            <option value="">Cor</option>
+                            <option value="preto">Preto</option>
+                            <option value="branco" disabled>Branco - Indisponível</option>
+                            <option value="cinza-claro" disabled>Cinza Claro - Indisponível</option>
+                        </select>
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary btn-lg car-button">
+                        <ion-icon name="cart-outline"></ion-icon> Adicionar ao carrinho
+                    </button>
+                    
+                    <!-- Bloco: Consultar frete -->
+                    <div class="mt-4">
+                        <p class="mb-2"><strong>Consultar frete e prazo de entrega</strong></p>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <input type="text" name="cep" class="form-control" placeholder="Digite seu CEP" style="max-width: 200px;">
+                            <button class="btn btn-primary btn-tech">OK</button>
+                            <a href="https://buscacepinter.correios.com.br/app/endereco/index.php?t" target="_blank" class="d-block mt-2" style="font-size: 0.9rem;">Não lembro meu CEP</a>
+                        </div>
+                        <div class="obs-entrega text-muted"><ion-icon name="alert-circle"></ion-icon> Os prazos de entrega começam a contar a partir da confirmação de pagamento.</div>
+                    </div>
                 </div>
             </section>
 
@@ -72,6 +131,9 @@
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">Características</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab">Avaliações</button>
                     </li>
                 </ul>
             
@@ -173,8 +235,136 @@
                         <p><b>Número de seções</b>: 3</p>
                         <p><b>Contagem de processadores</b>: 1</p>
                     </div>
+                    <div class="tab-pane fade" id="tab4" role="tabpanel">
+                        <div class="avaliacoes-lista">
+                            <article class="avaliacao-item">
+                                <div class="avaliacao-topo">
+                                    <strong class="nome-usuario">Ana Paula</strong>
+                                    <span class="data-avaliacao">Avaliado em 14/06/2025</span>
+                                </div>
+                                <div class="estrelas-avaliacao">
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9734;</span>
+                                </div>
+                                <p class="comentario">O teclado é ótimo, silencioso e confortável. Chegou antes do prazo. Recomendo!</p>
+                            </article>
+
+                            <article class="avaliacao-item">
+                                <div class="avaliacao-topo">
+                                    <strong class="nome-usuario">Carlos Henrique</strong>
+                                    <span class="data-avaliacao">Avaliado em 09/06/2025</span>
+                                </div>
+                                <div class="estrelas-avaliacao">
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                </div>
+                                <p class="comentario">Produto excelente. Superou minhas expectativas. O acabamento é premium!</p>
+                            </article>
+
+                            <article class="avaliacao-item">
+                                <div class="avaliacao-topo">
+                                    <strong class="nome-usuario">Regiane</strong>
+                                    <span class="data-avaliacao">Avaliado em 16/05/2025</span>
+                                </div>
+                                <div class="estrelas-avaliacao">
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                    <span class="estrela">&#9733;</span>
+                                </div>
+                                <p class="comentario">Confortável e silencioso. O melhor teclado que já usei. O fato de não ser abnt2 não muda nada na usabilidade.</p>
+                            </article>
+                        </div>
+
+                    </div>
                 </div>
             </section>
+
+            <section id="produtos-relacionados" class="container my-5">
+                <div class="text-center">
+                    <h2 class="interna-heading mb-4">Produtos Relacionados</h2>
+                </div>
+
+                <div class="row g-4">
+                    
+                    <!-- Produto 1 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card-produto">
+                            <div class="tag-produto">Top Oferta</div>
+                            <img src="/resources/img/mouse-gamer-logitech-g502.jpg" class="img-produto" alt="Mouse Logitech G502">
+                            <div class="caption-produto">
+                                <h3 class="nome-produto">Mouse Logitech G502 HERO</h3>
+                                <p class="preco-antigo">R$ 349,00</p>
+                                <p class="preco-novo">R$ 249,90</p>
+                                <p class="condicoes">À vista no PIX ou até 10x de R$ 24,99</p>
+                                <button type="button" class="btn btn-primary btn-lg car-button">
+                                    <ion-icon name="cart-outline"></ion-icon> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 2 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card-produto">
+                            <div class="tag-produto">Frete Grátis</div>
+                            <img src="/resources/img/headset-gamer-hyperx.jpg" class="img-produto" alt="Headset HyperX Cloud II">
+                            <div class="caption-produto">
+                                <h3 class="nome-produto">Headset HyperX Cloud II</h3>
+                                <p class="preco-antigo">R$ 699,00</p>
+                                <p class="preco-novo">R$ 549,90</p>
+                                <p class="condicoes">À vista no PIX ou até 10x de R$ 54,99</p>
+                                <button type="button" class="btn btn-primary btn-lg car-button">
+                                    <ion-icon name="cart-outline"></ion-icon> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 3 -->
+                    <div class="col-sm-6 col-lg-3">
+                    <div class="card-produto">
+                        <div class="tag-produto">Últimas unidades</div>
+                        <img src="/resources/img/teclado-redragon-kumara.jpg" class="img-produto" alt="Teclado Mecânico Redragon Kumara">
+                        <div class="caption-produto">
+                            <h3 class="nome-produto">Teclado Redragon Kumara</h3>
+                            <p class="preco-antigo">R$ 279,00</p>
+                            <p class="preco-novo">R$ 199,90</p>
+                            <p class="condicoes">À vista no PIX ou até 10x de R$ 19,99</p>
+                            <button type="button" class="btn btn-primary btn-lg car-button">
+                                <ion-icon name="cart-outline"></ion-icon> Comprar
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Produto 4 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card-produto">
+                            <div class="tag-produto">Top Oferta</div>
+                            <img src="/resources/img/webcam-logitech-c920s-pro-full-hd-1080.jpg" class="img-produto" alt="Webcam Logitech C920">
+                            <div class="caption-produto">
+                                <h3 class="nome-produto">Webcam Logitech C920</h3>
+                                <p class="preco-antigo">R$ 499,00</p>
+                                <p class="preco-novo">R$ 389,00</p>
+                                <p class="condicoes">À vista no PIX ou até 10x de R$ 38,90</p>
+                                <button type="button" class="btn btn-primary btn-lg car-button">
+                                    <ion-icon name="cart-outline"></ion-icon> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
         </main>
 
         <!-- footer -->
@@ -182,6 +372,8 @@
         
         <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Fancybox Gallery -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
         <!-- IonIcons -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
