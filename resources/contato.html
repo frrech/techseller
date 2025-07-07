@@ -17,107 +17,105 @@
 
         <link rel="stylesheet" href="css/style.css">
     </head>
-  <body>
-    <div w3-include-html="header.html"></div>
+    <body>
+        <div w3-include-html="header.html"></div>
 
-    <main class="container contato-section">
+        <main class="container contato-section">
+            
+            <div class="text-center">
+                <h1 class="mb-5 principal-heading">Fale Conosco</h1>
+            </div>
         
-        <div class="text-center">
-             <h1 class="mb-5 interna-heading">Fale Conosco</h1>
-        </div>
-       
-        <div class="row g-4">
-            <!-- Formulário -->
-            <div class="col-md-6 contato-form">
-                <form>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
-                        <label for="nome">Nome completo</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required />
-                        <label for="email">E-mail</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="tel" class="form-control" id="telefone" placeholder="(51) 99999-9999" />
-                        <label for="telefone">Telefone (opcional)</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <select class="form-select" id="motivo" required>
-                            <option value="" disabled selected>Escolha o motivo do contato</option>
-                            <option value="info-pedido">Informações sobre meu pedido</option>
-                            <option value="pedido-extraviado">Pedido extraviado ou com erro</option>
-                            <option value="troca-devolucao">Solicitar troca ou devolução</option>
-                            <option value="pagamento">Dúvidas sobre pagamento</option>
-                            <option value="elogio">Elogio</option>
-                            <option value="critica">Crítica</option>
-                            <option value="outros">Outros assuntos</option>
-                        </select>
-                        <label for="motivo">Motivo do contato</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Deixe sua mensagem aqui" id="mensagem" style="height: 150px" required></textarea>
-                        <label for="mensagem">Mensagem</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg btn-tech">Enviar mensagem</button>
-                </form>
-            </div>
-
-            <!-- Endereço e mapa -->
-            <div class="col-md-6 contato-info">
-                <h2 class="h5 mb-3">Nosso Endereço</h2>
-                
-                <div class="info-item d-flex align-items-start mb-3">
-                    <ion-icon name="location-outline" style="font-size: 1.5rem; color: #055C9D; margin-right: 10px;"></ion-icon>
-                    <div>
-                        <strong>TechSeller - Porto Alegre</strong><br>
-                        R. Cel. Genuíno, 130 - Centro Histórico<br>
-                        Porto Alegre - RS<br>
-                        CEP: 90010-350
-                    </div>
+            <div class="row g-4">
+                <!-- Formulário -->
+                <div class="col-md-6 contato-form">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
+                            <label for="nome">Nome completo</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required />
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="telefone" placeholder="(51) 99999-9999" />
+                            <label for="telefone">Telefone (opcional)</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="motivo" required>
+                                <option value="" disabled selected>Escolha o motivo do contato</option>
+                                <option value="info-pedido">Informações sobre meu pedido</option>
+                                <option value="pedido-extraviado">Pedido extraviado ou com erro</option>
+                                <option value="troca-devolucao">Solicitar troca ou devolução</option>
+                                <option value="pagamento">Dúvidas sobre pagamento</option>
+                                <option value="elogio">Elogio</option>
+                                <option value="critica">Crítica</option>
+                                <option value="outros">Outros assuntos</option>
+                            </select>
+                            <label for="motivo">Motivo do contato</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Deixe sua mensagem aqui" id="mensagem" style="height: 150px" required></textarea>
+                            <label for="mensagem">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-tech">Enviar mensagem</button>
+                    </form>
                 </div>
 
-                <div class="info-item d-flex align-items-start mb-3">
-                    <ion-icon name="time-outline" style="font-size: 1.5rem; color: #055C9D; margin-right: 10px;"></ion-icon>
-                    <div>
-                        <strong>Horário de funcionamento:</strong><br>
-                        Segunda a sábado: 09:00 às 18:00
+                <!-- Endereço e mapa -->
+                <div class="col-md-6 contato-info">
+                    <h2 class="h5 mb-3">Nosso Endereço</h2>
+                    
+                    <div class="info-item d-flex align-items-start mb-3">
+                        <ion-icon name="location-outline" style="font-size: 1.5rem; color: #055C9D; margin-right: 10px;"></ion-icon>
+                        <div>
+                            <strong>TechSeller - Porto Alegre</strong><br>
+                            R. Cel. Genuíno, 130 - Centro Histórico<br>
+                            Porto Alegre - RS<br>
+                            CEP: 90010-350
+                        </div>
                     </div>
-                </div>
 
-                <div class="info-item d-flex align-items-start mb-3">
-                    <ion-icon name="call-outline" style="font-size: 1.5rem; color: #055C9D; margin-right: 10px;"></ion-icon>
-                    <div>
-                        <strong>Telefone:</strong><br>
-                        (51) 3022-9400
+                    <div class="info-item d-flex align-items-start mb-3">
+                        <ion-icon name="time-outline" style="font-size: 1.5rem; color: #055C9D; margin-right: 10px;"></ion-icon>
+                        <div>
+                            <strong>Horário de funcionamento:</strong><br>
+                            Segunda a sábado: 09:00 às 18:00
+                        </div>
                     </div>
-                </div>
 
-                <div class="mt-4">
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.877947846226!2d-51.22802232366492!3d-30.03215457505719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199cd57d26a75d%3A0x40f8f0e7e8fe508e!2sR.%20Cel.%20Genu%C3%ADno%2C%20130%20-%20Centro%20Hist%C3%B3rico%2C%20Porto%20Alegre%20-%20RS%2C%2090010-350!5e0!3m2!1spt-BR!2sbr!4v1720199471769!5m2!1spt-BR!2sbr"
-                    width="100%"
-                    height="250"
-                    style="border:0; border-radius:8px;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
+                    <div class="info-item d-flex align-items-start mb-3">
+                        <ion-icon name="call-outline" style="font-size: 1.5rem; color: #055C9D; margin-right: 10px;"></ion-icon>
+                        <div>
+                            <strong>Telefone:</strong><br>
+                            (51) 3022-9400
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.877947846226!2d-51.22802232366492!3d-30.03215457505719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199cd57d26a75d%3A0x40f8f0e7e8fe508e!2sR.%20Cel.%20Genu%C3%ADno%2C%20130%20-%20Centro%20Hist%C3%B3rico%2C%20Porto%20Alegre%20-%20RS%2C%2090010-350!5e0!3m2!1spt-BR!2sbr!4v1720199471769!5m2!1spt-BR!2sbr"
+                        width="100%"
+                        height="250"
+                        style="border:0; border-radius:8px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <div w3-include-html="footer.html"></div>
+        <div w3-include-html="footer.html"></div>
 
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Fancybox Gallery -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-    <!-- IonIcons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- scripts -->
-    <script src="js/include.js"></script>
-  </body>
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- IonIcons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- scripts -->
+        <script src="js/include.js"></script>
+    </body>
 </html>

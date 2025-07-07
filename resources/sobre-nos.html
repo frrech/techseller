@@ -1,121 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechSeller - Sobre Nós</title>
-    <link rel="stylesheet" href="../vendors/css/normalize.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .sobre-section {
-        padding: 60px 0;
-      }
-      .interna-heading {
-        font-size: 2rem;
-        color: #055C9D;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 40px;
-      }
-      .numeros-box {
-        background-color: #f9f9f9;
-        border-radius: 8px;
-        padding: 30px;
-        text-align: center;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      }
-      .numeros-box h3 {
-        color: #055C9D;
-        font-size: 2rem;
-        margin-bottom: 10px;
-      }
-      .info-box {
-        border-left: 4px solid #055C9D;
-        padding-left: 16px;
-        margin-bottom: 24px;
-      }
-      .info-box h4 {
-        color: #055C9D;
-        font-weight: 600;
-        margin-bottom: 8px;
-      }
-    </style>
-  </head>
-  <body>
-    <div w3-include-html="header.html"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TechSeller - Sobre Nós</title>
 
-    <main class="container sobre-section">
-      <h1 class="interna-heading">Quem somos</h1>
+        <!-- Importação do normalize css para corrigir bugs dos navegadores -->
+        <link rel="stylesheet" href="../vendors/css/normalize.css">
 
-      <section class="mb-5">
-        <p class="lead text-center">
-          Fundada em 2020, a <strong>TechSeller</strong> nasceu com a missão de oferecer os melhores periféricos e soluções de tecnologia para gamers, profissionais e entusiastas da inovação. Trabalhamos com as melhores marcas do mercado e buscamos proporcionar uma experiência de compra ágil, segura e transparente.
-        </p>
-      </section>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-      <!-- Nossos Números -->
-      <section class="mb-5">
-        <h2 class="text-center mb-4">Nossos números falam por si só</h2>
-        <div class="row g-4 text-center">
-          <div class="col-sm-6 col-lg-3">
-            <div class="numeros-box">
-              <h3>+50 mil</h3>
-              <p>Clientes atendidos</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="numeros-box">
-              <h3>99%</h3>
-              <p>De satisfação nos pedidos</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="numeros-box">
-              <h3>24h</h3>
-              <p>Tempo médio de envio</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="numeros-box">
-              <h3>+300</h3>
-              <p>Produtos em estoque</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-      <!-- Missão, Visão, Plataforma, Valores -->
-      <section>
-        <h2 class="text-center mb-4">Nossos pilares</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="info-box">
-              <h4>Missão</h4>
-              <p>Oferecer produtos de qualidade com atendimento ágil, garantindo uma experiência de compra segura, confiável e personalizada.</p>
-            </div>
-            <div class="info-box">
-              <h4>Visão</h4>
-              <p>Ser referência nacional em vendas online de periféricos, destacando-se pela inovação, atendimento e relacionamento com o cliente.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="info-box">
-              <h4>Plataforma</h4>
-              <p>Utilizamos tecnologia de ponta para garantir uma navegação rápida, responsiva e segura, com foco na usabilidade e experiência do usuário.</p>
-            </div>
-            <div class="info-box">
-              <h4>Valores</h4>
-              <p>Comprometimento, transparência, respeito ao consumidor, foco em resultado, melhoria contínua e paixão por tecnologia.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div w3-include-html="header.html"></div>
 
-    <div w3-include-html="footer.html"></div>
+        <main class="container sobre-section">
+            
+            <div class="text-center">
+                <h1 class="mb-5 principal-heading">Quem somos</h1>
+            </div>
+        
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/include.js"></script>
-  </body>
+            <section class="mb-5 px-3 px-md-0">
+                <p class="lead text-center">
+                Fundada em 2020, a <strong>TechSeller</strong> nasceu com a missão de oferecer os melhores periféricos e soluções de tecnologia para gamers, profissionais e entusiastas da inovação. Trabalhamos com as melhores marcas do mercado e buscamos proporcionar uma experiência de compra ágil, segura e transparente.
+                </p>
+            </section>
+
+            <!-- Nossos Números -->
+            <section class="mb-5 px-3 px-md-0">
+
+                <h2 class="text-center mb-4">Nossos números falam por si só</h2>
+
+                <!-- Avaliações externas -->
+                <div class="row mb-5 g-4">
+                    <div class="col-md-4">
+                        <div class="avaliacao-card">
+                            <img src="/resources/img/reclame-aqui-logo.jpg" alt="Reclame Aqui">
+                            <div class="linha-separadora"></div>
+                            <p>100% das reclamações atendidas</p>
+                            <p>98,1% de Índice de Solução</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="avaliacao-card">
+                            <img src="/resources/img/google-logo.jpg" alt="Google">
+                            <div class="linha-separadora"></div>
+                            <p>4.8 de Nota geral</p>
+                            <p>+1000 comentários</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="avaliacao-card">
+                            <img src="/resources/img/selo-ebit.jpg" alt="e-bit">
+                            <div class="linha-separadora"></div>
+                            <p>87% de entregas no prazo</p>
+                            <p>90% das pessoas voltariam a comprar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 text-center">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="numeros-box">
+                            <h3 id="clientes">0</h3>
+                            <p>Clientes atendidos</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="numeros-box">
+                            <h3 id="satisfacao">0</h3>
+                            <p>De satisfação nos pedidos</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="numeros-box">
+                            <h3 id="envio">0</h3>
+                            <p>Tempo médio de envio</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="numeros-box">
+                            <h3 id="produtos">0</h3>
+                            <p>Produtos em estoque</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Missão, Visão, Plataforma, Valores -->
+            <section class="mb-5 px-3 px-md-0">
+
+                <h2 class="text-center mb-4">Nossos pilares</h2>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="info-box">
+                            <h4>Missão</h4>
+                            <p>Oferecer produtos de qualidade com atendimento ágil, garantindo uma experiência de compra segura, confiável e personalizada.</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>Visão</h4>
+                            <p>Ser referência nacional em vendas online de periféricos, destacando-se pela inovação, atendimento e relacionamento com o cliente.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="info-box">
+                            <h4>Plataforma</h4>
+                            <p>Utilizamos tecnologia de ponta para garantir uma navegação rápida, responsiva e segura, com foco na usabilidade e experiência do usuário.</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>Valores</h4>
+                            <p>Comprometimento, transparência, respeito ao consumidor, foco em resultado, melhoria contínua e paixão por tecnologia.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div w3-include-html="footer.html"></div>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- CountUp.js -->
+        <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
+        <!-- IonIcons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- scripts -->
+        <script src="js/include.js"></script>
+
+        <script>
+            /**
+            * Inclui a contagem na página
+            */
+            const options = { duration: 2, useEasing: true };
+
+            const targets = [
+                { id: 'clientes', value: 50000 },
+                { id: 'satisfacao', value: 99 },
+                { id: 'envio', value: 24 },
+                { id: 'produtos', value: 300 }
+            ];
+
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    const targetObj = targets.find(t => t.id === id);
+                    if (targetObj) {
+                    const count = new countUp.CountUp(id, targetObj.value, options);
+                    if (!count.error) count.start();
+                    obs.unobserve(entry.target); // evita repetir
+                    }
+                }
+                });
+            }, {
+                threshold: 0.6 // inicia quando 60% do elemento estiver visível
+            });
+
+            targets.forEach(t => {
+                const el = document.getElementById(t.id);
+                if (el) observer.observe(el);
+            });
+        </script>
+    </body>
 </html>

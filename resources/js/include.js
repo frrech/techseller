@@ -1,3 +1,6 @@
+/**
+ * Inclui o HTML do Header e Footer em todas as páginas
+ */
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
