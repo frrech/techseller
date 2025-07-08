@@ -48,6 +48,12 @@ a:hover {
 }
 
 /* HEADER */
+header{
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #055C9D;
+}
+
 .header-list-icons {
   height: 40px;
 }
@@ -58,6 +64,10 @@ a:hover {
   flex-wrap: nowrap;
 }
 
+.mobile-nav-icon{
+    display:none;
+  }
+
 .main-nav .nav-link {
     color: #055C9D;
     font-weight: bold;
@@ -65,10 +75,6 @@ a:hover {
 
 .main-nav .nav-link:hover {
     color: #033c6d;
-}
-
-header {
-    border-bottom: 2px solid #055C9D;
 }
 
 /* FOOTER */
@@ -875,4 +881,14 @@ iframe {
 		flex-wrap: wrap;
 		height: 200px;
 	}
+    .mobile-nav-icon{
+        display: block;
+    }
+    .js--list-nav{
+        display:none;
+        justify-content: center;
+    }
+    header{
+        justify-content: space-evenly; 
+    }
 }

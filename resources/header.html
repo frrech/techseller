@@ -18,7 +18,7 @@
         </div>
         <nav class="nav main-nav justify-content-center">
         <!-- Tornar em menu dropdown -->
-            <ul class="nav">
+            <ul class="nav js--list-nav">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
                 <li class="nav-item"><a class="nav-link" href="promocoes.html">Promoções</a></li>
@@ -27,14 +27,22 @@
                 <!-- colocar em uma div separada -->
             </ul>
             <div class="icons">
+                <a href="#" class="mobile-nav-icon js--mobile-nav-icon">
+                    <ion-icon class="nav-icon" size="large" name="menu-outline"></ion-icon>
+                </a>
                 <a href="carrinho.html"><ion-icon name="cart-outline" size="large" class="header-list-icons"></ion-icon></a>
                 <a href="login.html"><ion-icon name="person-circle-outline" size="large" class="header-list-icons"></ion-icon></a>
             </div>            
         </nav>
+        <!-- bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- IonIcons -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+         <!-- jQuery -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+         <!-- scripts -->
+         <script src="js/menu_responsivo.js"></script>
     </header>
 </body>
 </html>
