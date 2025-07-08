@@ -105,6 +105,106 @@ footer {
   	font-size: 18px;
 }
 
+/* HOME */
+.home-section {
+    padding: 60px 0;
+}
+
+.aside-banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.info-icons {
+    background: linear-gradient(90deg, #f5f7f9, #e9ecef);
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.info-icons .icon-item {
+    text-align: center;
+    padding: 12px;
+}
+
+.info-icons ion-icon {
+    font-size: 2rem;
+    color: #055C9D;
+    margin-bottom: 8px;
+}
+
+.info-icons h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.info-icons p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.search-bar {
+    padding: 10px 0;
+    background: linear-gradient(90deg, #f5f7f9, #e9ecef);
+    border-radius: 50px;
+    margin: 40px 0;
+    position: static;
+    width: 100%;
+}
+
+.search-bar .container {
+    max-width: 1140px;
+}
+
+.search-bar input.form-control {
+    border-radius: 50px 0 0 50px;
+    border: none;
+    padding-left: 20px;
+    background-color: #ffffff;
+    color: #333;
+    height: 42px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.search-bar .btn-search {
+    border-radius: 0 50px 50px 0;
+    height: 42px;
+    border: none;
+    background: #055C9D;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.search-bar .btn-search:hover {
+    background: #033c6d;
+}
+
+.produtos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 20px 0;
+}
+
+.produtos-header h2 {
+    color: #055C9D;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.produtos-header a {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.produtos-header a:hover {
+    text-decoration: underline;
+}
+
 /* DETALHE PRODUTO */
 #detalhe-produto {
     display: flex;
@@ -541,7 +641,14 @@ iframe {
     color: #333;
 }
 
-@media only screen and (max-width:992px) { 
+@media only screen and (min-width: 992px) {
+    /* Em telas grandes, faz o header ocupar duas colunas no layout de grid */
+    .produtos-header {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (max-width: 992px) { 
   	/* - Corrigir: A partir dessa resolução o navbar desaparece e os icones diminuem */
 	.menu-footer {
 		display:flex;
