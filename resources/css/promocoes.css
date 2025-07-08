@@ -1,0 +1,86 @@
+.promo-banner {
+    background: linear-gradient(90deg, #ffd700, #ff9d00);
+    color: #222;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.promo-banner h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.promo-banner p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.countdown {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #dc3545;
+}
+
+.promo-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-4px);
+}
+
+.promo-card .img-produto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+}
+
+.badge-desconto {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.caption-produto {
+    padding: 16px;
+}
+
+.caption-produto h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.preco-antigo {
+    font-size: 0.9rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.preco-novo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #055C9D;
+}
+
+.condicoes {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 8px;
+}

@@ -48,14 +48,27 @@ a:hover {
 }
 
 /* HEADER */
-.header-list-icons{
+.header-list-icons {
   height: 40px;
 }
 
-.icons{
+.icons {
   display:flex;
   justify-items: end;
   flex-wrap: nowrap;
+}
+
+.main-nav .nav-link {
+    color: #055C9D;
+    font-weight: bold;
+}
+
+.main-nav .nav-link:hover {
+    color: #033c6d;
+}
+
+header {
+    border-bottom: 2px solid #055C9D;
 }
 
 /* FOOTER */
@@ -540,6 +553,116 @@ footer {
     margin-top: 8px;
 }
 
+/* LOGIN */
+.login-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: #055C9D;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-floating label {
+    color: #999;
+}
+
+.btn-login {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.extra-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.extra-links a {
+    text-decoration: none;
+    color: #055C9D;
+    font-weight: 500;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+.dual-form-section button ion-icon {
+    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 1.2rem;
+}
+
+
+/* CADASTRO */
+.dual-form-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 60px 15px;
+}
+
+.dual-form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    max-width: 960px;
+    width: 100%;
+}
+
+.dual-form-box {
+    flex: 1 1 300px;
+    padding: 40px;
+    border-right: 1px solid #eee;
+}
+
+.dual-form-box:last-child {
+    border-right: none;
+}
+
+.dual-form-box h2 {
+    font-size: 1.4rem;
+    color: #055C9D;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.form-floating label {
+    color: #999;
+}
+
+.btn-full {
+    width: 100%;
+    font-size: 1.05rem;
+}
+
+.back-link {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
 /* CONTATO */
 .form-floating label {
     padding-left: 0.75rem;
@@ -563,6 +686,45 @@ footer {
 iframe {
     border: 0;
     border-radius: 8px;
+}
+
+/* CARRINHO */
+.cart-section {
+    padding: 60px 0;
+}
+
+.cart-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #055C9D;
+}
+
+.cart-table th,
+.cart-table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cart-table img {
+    width: 80px;
+    height: auto;
+}
+
+.cart-summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-summary h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-checkout {
+    width: 100%;
+    font-size: 1.1rem;
 }
 
 /* SOBRE NÓS */
@@ -694,6 +856,10 @@ iframe {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
+    .icons-tech {
+        justify-content: center;
+    }
   
 }
 
