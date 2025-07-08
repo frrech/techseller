@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TechSeller - Produtos</title>
+
+        <!-- Importação do normalize css para corrigir bugs dos navegadores -->
+        <link rel="stylesheet" href="../vendors/css/normalize.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Fancybox Gallery -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style>
+            .filtro-bar {
+            background: linear-gradient(90deg, #f5f7f9, #e9ecef);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            }
+            .filtro-bar h2 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            }
+            .filtro-bar .form-select,
+            .filtro-bar .form-control {
+            border-radius: 50px;
+            }
+            .produto-card {
+            min-height: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease;
+            }
+            .produto-card:hover {
+            transform: translateY(-4px);
+            }
+            .img-produto {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            }
+            .caption-produto {
+            padding: 16px;
+            background-color: #f9f9f9;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            }
+            .caption-produto h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            }
+            .preco-antigo {
+            font-size: 0.9rem;
+            color: #999;
+            text-decoration: line-through;
+            }
+            .preco-novo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #055C9D;
+            }
+            .condicoes {
+            font-size: 0.85rem;
+            color: #555;
+            margin-top: 8px;
+            }
+            .caption-produto a.btn {
+            margin-top: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div w3-include-html="header.html"></div>
+
+        <main class="container">
+            <!-- Filtros -->
+            <section class="filtro-bar mt-5">
+                <h2>Filtrar produtos</h2>
+                
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Buscar por nome...">
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select">
+                            <option selected>Selecione a categoria</option>
+                            <option value="1">Teclados</option>
+                            <option value="2">Mouses</option>
+                            <option value="3">Headsets</option>
+                            <option value="4">Monitores</option>
+                            <option value="5">Notebooks</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select">
+                            <option selected>Departamento</option>
+                            <option value="hardware">Hardware</option>
+                            <option value="pcgame">PC Gamer</option>
+                            <option value="perifericos">Periféricos</option>
+                            <option value="acessorios">Acessórios</option>
+                            <option value="promocoes">Promoções</option>
+                        </select>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Produtos -->
+            <section class="mt-5 mb-5">
+                <div class="row g-4">
+                    <!-- Produtos -->
+                    <section class="mt-5 mb-5">
+                        <div class="row g-4">
+                            <!-- Produto 1 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/mouse-gamer-logitech-g502.jpg" class="img-produto" alt="Mouse Logitech G502 HERO">
+                                    <div class="caption-produto">
+                                        <h3>Mouse Logitech G502 HERO</h3>
+                                        <p class="preco-antigo">R$ 349,00</p>
+                                        <p class="preco-novo">R$ 249,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 24,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 2 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/teclado-redragon-kumara.jpg" class="img-produto" alt="Teclado Redragon Kumara">
+                                    <div class="caption-produto">
+                                        <h3>Teclado Redragon Kumara</h3>
+                                        <p class="preco-antigo">R$ 279,00</p>
+                                        <p class="preco-novo">R$ 199,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 19,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 3 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/headset-gamer-hyperx.jpg" class="img-produto" alt="Headset HyperX Cloud II">
+                                    <div class="caption-produto">
+                                        <h3>Headset HyperX Cloud II</h3>
+                                        <p class="preco-antigo">R$ 699,00</p>
+                                        <p class="preco-novo">R$ 549,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 54,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 4 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/monitor-gamer-lg-ultragear-27.jpg" class="img-produto" alt="Monitor LG UltraWide 29” Full HD">
+                                    <div class="caption-produto">
+                                        <h3>Monitor LG UltraWide 29” Full HD</h3>
+                                        <p class="preco-antigo">R$ 1.799,00</p>
+                                        <p class="preco-novo">R$ 1.349,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 134,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 5 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/ssd-kingston-nv3.jpg" class="img-produto" alt="SSD Kingston A400 480GB">
+                                    <div class="caption-produto">
+                                        <h3>SSD Kingston A400 480GB</h3>
+                                        <p class="preco-antigo">R$ 389,00</p>
+                                        <p class="preco-novo">R$ 299,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 29,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 6 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/placa-de-video-palit-nvidia-geforce.jpg" class="img-produto" alt="Placa de Vídeo NVIDIA GTX 1660 Super 6GB">
+                                    <div class="caption-produto">
+                                        <h3>Placa de Vídeo NVIDIA GTX 1660 Super 6GB</h3>
+                                        <p class="preco-antigo">R$ 1.699,00</p>
+                                        <p class="preco-novo">R$ 1.299,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 129,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 7 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/cadeira-gamer.jpg" class="img-produto" alt="Cadeira Gamer ThunderX3 Yama1">
+                                    <div class="caption-produto">
+                                        <h3>Cadeira Gamer ThunderX3 Yama1</h3>
+                                        <p class="preco-antigo">R$ 1.199,00</p>
+                                        <p class="preco-novo">R$ 949,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 94,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 8 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/teclado-mecanico-gamer-corsair-k70.jpg" class="img-produto" alt="Teclado Mecânico Corsair K70 RGB">
+                                    <div class="caption-produto">
+                                        <h3>Teclado Mecânico Corsair K70 RGB</h3>
+                                        <p class="preco-antigo">R$ 849,00</p>
+                                        <p class="preco-novo">R$ 649,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 64,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 9 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/webcam-logitech-c920s-pro-full-hd-1080.jpg" class="img-produto" alt="Webcam Logitech C920 Full HD">
+                                    <div class="caption-produto">
+                                        <h3>Webcam Logitech C920 Full HD</h3>
+                                        <p class="preco-antigo">R$ 499,00</p>
+                                        <p class="preco-novo">R$ 379,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 37,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 10 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/Notebook-Dell-Inspiron-15.jpg" class="img-produto" alt="Notebook Dell Inspiron i5 15” 8GB RAM">
+                                    <div class="caption-produto">
+                                        <h3>Notebook Dell Inspiron i5 15” 8GB RAM</h3>
+                                        <p class="preco-antigo">R$ 4.299,00</p>
+                                        <p class="preco-novo">R$ 3.899,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 389,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 11 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/fonte-corsair-cx-series-cx650.jpg" class="img-produto" alt="Fonte Corsair 650W 80 Plus Bronze">
+                                    <div class="caption-produto">
+                                        <h3>Fonte Corsair 650W 80 Plus Bronze</h3>
+                                        <p class="preco-antigo">R$ 629,00</p>
+                                        <p class="preco-novo">R$ 519,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 51,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Produto 12 -->
+                            <div class="col-md-4">
+                                <div class="produto-card">
+                                    <img src="/resources/img/hd-externo-portatil-2tb-seagate.jpg" class="img-produto" alt="HD Externo Seagate 2TB USB 3.0">
+                                    <div class="caption-produto">
+                                        <h3>HD Externo Seagate 2TB USB 3.0</h3>
+                                        <p class="preco-antigo">R$ 549,00</p>
+                                        <p class="preco-novo">R$ 439,90</p>
+                                        <p class="condicoes">À vista no PIX ou até 10x de R$ 43,99</p>
+                                        <a href="detalhe-produto.html" class="btn btn-primary btn-tech btn-sm mt-3">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <div w3-include-html="footer.html"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/include.js"></script>
+    </body>
+</html>
